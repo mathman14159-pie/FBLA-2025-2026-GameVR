@@ -25,6 +25,7 @@ TagManager:
   - Suspect4
   - ClockOut
   - Muffin
+  - Work
   layers:
   - Default
   - TransparentFX

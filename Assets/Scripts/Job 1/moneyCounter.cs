@@ -17,6 +17,7 @@ public class moneyCounter : MonoBehaviour
     public int currentMoney;
     public int moneyPayout;
     public int moneyPayoutAmount;
+    public int moneyFromTyping;
     
     void Awake()
     {
@@ -74,8 +75,11 @@ public class moneyCounter : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
+        moneyFromTyping = PlayerPrefs.GetInt("timesTyped");
+        moneyPayout = moneyFromTyping;
         moneyPayoutAmount = moneyPayout;
         moneyText.text = "$" + moneyPayoutAmount.ToString();
+        PlayerPrefs.SetInt("timesTyped", 0);
     }
     public void CalcPayoutNoPause()
     {
@@ -130,5 +134,19 @@ public class moneyCounter : MonoBehaviour
         RightSuspect();
         PlayerPrefs.SetInt("Money", currentMoney);
         
+    }
+    public void CalcTypeToMoney()
+    {
+        moneyFromTyping = PlayerPrefs.GetInt("timesTyped");
+        moneyPayout = moneyFromTyping;
+        examplePlayer.enabled = false;
+        machineOpen = true;
+        ClockOutUI.SetActive(true);
+        playerInput.enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        Time.timeScale = 0f;
+        moneyPayoutAmount = moneyPayout;
+        moneyText.text = "$" + moneyPayoutAmount.ToString();
     }
 }

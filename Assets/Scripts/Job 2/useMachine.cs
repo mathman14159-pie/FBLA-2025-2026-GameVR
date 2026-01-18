@@ -2,6 +2,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using KinematicCharacterController.Examples;
+using UnityEngine.SceneManagement;
 
 
 
@@ -72,6 +73,17 @@ public class useMachine : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.U))
                 {
                     openFridge();
+                    
+                }
+            }
+            if (hit.collider.CompareTag("Work"))
+            {
+                if (Input.GetKeyDown(KeyCode.U))
+                {
+                    Debug.Log("loadJob");
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    SceneManager.LoadScene("Job 5_Work");
                     
                 }
             }
