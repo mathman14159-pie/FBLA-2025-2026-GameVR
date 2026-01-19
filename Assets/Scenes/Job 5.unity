@@ -2481,7 +2481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1520103213049352, guid: df13904aaf6e0884b8024aa0902ad3c4, type: 3}
       propertyPath: m_TagString
-      value: ClockOut
+      value: ClockOut5
       objectReference: {fileID: 0}
     - target: {fileID: 4986146434053154, guid: df13904aaf6e0884b8024aa0902ad3c4, type: 3}
       propertyPath: m_LocalPosition.x

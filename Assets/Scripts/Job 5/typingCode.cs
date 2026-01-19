@@ -69,8 +69,7 @@ public class typingCode : MonoBehaviour
     public void closeJob()
     {
         PlayerPrefs.SetInt("timesTyped", timeTyped);
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        
         SceneManager.LoadScene("Job 5");
         Debug.Log("Close" + PlayerPrefs.GetInt("timesTyped"));
     }

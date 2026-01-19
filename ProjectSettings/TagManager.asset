@@ -26,6 +26,7 @@ TagManager:
   - ClockOut
   - Muffin
   - Work
+  - ClockOut5
   layers:
   - Default
   - TransparentFX

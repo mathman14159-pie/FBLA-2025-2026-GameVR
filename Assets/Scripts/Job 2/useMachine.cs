@@ -68,6 +68,14 @@ public class useMachine : MonoBehaviour
 
                     }
             }
+            if (hit.collider.CompareTag("ClockOut5"))
+            {
+                if (Input.GetKeyDown(KeyCode.U))
+                    {
+                        moneyCounter.instance.CalcPayout5();
+
+                    }
+            }
             if (hit.collider.CompareTag("Muffin"))
             {
                 if (Input.GetKeyDown(KeyCode.U))
