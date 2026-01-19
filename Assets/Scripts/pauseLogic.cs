@@ -6,6 +6,7 @@ public class pauseLogic : MonoBehaviour
 {
     public ExamplePlayer examplePlayer;
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
     public PlayerInput playerInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +43,12 @@ public class pauseLogic : MonoBehaviour
     }
     public void Options()
     {
-        
+        optionsMenu.SetActive(true);
+        pauseMenu.SetActive(false);
+    }
+    public void CloseOptions()
+    {
+        optionsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
     }
 }
