@@ -95,6 +95,14 @@ public class useMachine : MonoBehaviour
                     
                 }
             }
+            if (hit.collider.CompareTag("Coffee"))
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SceneManager.LoadScene("Job 3 Guesser");
+                }
+                
+            }
             
         
         }
