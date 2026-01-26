@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using KinematicCharacterController.Examples;
+using UnityEngine.SceneManagement;
 
 public class pauseLogic : MonoBehaviour
 {
@@ -50,5 +51,9 @@ public class pauseLogic : MonoBehaviour
     {
         optionsMenu.SetActive(false);
         pauseMenu.SetActive(true);
+    }
+    public void startPlayerSelection()
+    {
+        SceneManager.LoadScene("PlayerSelection");
     }
 }
