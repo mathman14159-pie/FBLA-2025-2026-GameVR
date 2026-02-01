@@ -54,7 +54,7 @@ public class pauseLogic : MonoBehaviour
     }
     public void CloseOptions()
     {
-        if (englishOrSpanish != true)
+        if (englishOrSpanish != false)
         {
             optionsMenu.SetActive(false);
             spanishMainMenu.SetActive(true);
