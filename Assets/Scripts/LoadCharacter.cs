@@ -7,7 +7,7 @@ public class LoadCharacter : MonoBehaviour
     public Transform spawnPoint;
     public GameObject prefab;
     public GameObject clone;
-    public GameObject clone2test;
+   
     public GameObject cam;
     public Vector3 offset;
     
@@ -25,7 +25,6 @@ public class LoadCharacter : MonoBehaviour
     void Update()
     {
         clone.transform.position = spawnPoint.transform.position;
-        clone2test.transform.position = spawnPoint.transform.position;
         cam.transform.position = clone.transform.position + offset;
         cam.transform.rotation = clone.transform.rotation;
     }

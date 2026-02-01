@@ -8,7 +8,11 @@ public class pauseLogic : MonoBehaviour
     public ExamplePlayer examplePlayer;
     public GameObject pauseMenu;
     public GameObject optionsMenu;
+    public GameObject mainMenu;
+    public GameObject spanishMainMenu;
+    public GameObject HowToPlayMenuasset;
     public PlayerInput playerInput;
+    public bool englishOrSpanish;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,15 +49,46 @@ public class pauseLogic : MonoBehaviour
     public void Options()
     {
         optionsMenu.SetActive(true);
+        mainMenu.SetActive(false);
         pauseMenu.SetActive(false);
     }
     public void CloseOptions()
     {
-        optionsMenu.SetActive(false);
-        pauseMenu.SetActive(true);
+        if (englishOrSpanish != true)
+        {
+            optionsMenu.SetActive(false);
+            spanishMainMenu.SetActive(true);
+            pauseMenu.SetActive(true);
+        }
+        else
+        {
+            optionsMenu.SetActive(false);
+            mainMenu.SetActive(true);
+            pauseMenu.SetActive(true);
+        }
+        
+    }
+    public void HowToPlayMenu()
+    {
+        mainMenu.SetActive(false);
+        HowToPlayMenuasset.SetActive(true);
+    }
+    public void CloseHowToPlayMenu()
+    {
+        mainMenu.SetActive(true);
+        HowToPlayMenuasset.SetActive(false);
     }
     public void startPlayerSelection()
     {
         SceneManager.LoadScene("PlayerSelection");
     }
+    public void startGame()
+    {
+        SceneManager.LoadScene("Bedroom");
+    }
+    public void spanishMode(bool isOn)
+    {
+        englishOrSpanish = isOn;
+    }
+    
 }

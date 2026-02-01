@@ -11756,8 +11756,7 @@ Transform:
   m_LocalPosition: {x: -5.22, y: 4.049, z: -5.3999996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 870661702}
+  m_Children: []
   m_Father: {fileID: 1843395789}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &592166937
@@ -16265,72 +16264,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4636549036209878, guid: 5238866b30afab24e98ae578d9effdfd, type: 3}
   m_PrefabInstance: {fileID: 1387886705}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &870661701
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 592166936}
-    m_Modifications:
-    - target: {fileID: 1052995327280890, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_Name
-      value: Character_SchoolBoy_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 95291015814423612, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
---- !u!4 &870661702 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4068098954291790, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-  m_PrefabInstance: {fileID: 870661701}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &873424221 stripped
 Transform:
@@ -24004,11 +23937,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 123d7eee89ce3d14faecef772a63a9d0, type: 3}
---- !u!1 &1329487102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1052995327280890, guid: 7340936ca1fe0c14e88d905904049120, type: 3}
-  m_PrefabInstance: {fileID: 870661701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1331043454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4006400011415720, guid: f70fe54fb88c4ce498930120dcf7529f, type: 3}
@@ -34367,7 +34295,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 592166936}
   prefab: {fileID: 0}
   clone: {fileID: 0}
-  clone2test: {fileID: 1329487102}
   cam: {fileID: 530803052}
   offset: {x: 0, y: 0, z: 0}
 --- !u!4 &1843395789
@@ -38461,6 +38388,8 @@ MonoBehaviour:
   examplePlayer: {fileID: 0}
   pauseMenu: {fileID: 1315976008}
   optionsMenu: {fileID: 1684899677}
+  mainMenu: {fileID: 0}
+  HowToPlayMenuasset: {fileID: 0}
   playerInput: {fileID: 0}
 --- !u!4 &2102177059
 Transform:
