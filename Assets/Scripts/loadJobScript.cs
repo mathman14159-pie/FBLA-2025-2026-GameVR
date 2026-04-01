@@ -8,6 +8,7 @@ public class loadJobScript : MonoBehaviour
     public Camera playerCamera;
     public LayerMask jobItem;
     public float interactDistance = 3;
+   
     
 
     void Update()

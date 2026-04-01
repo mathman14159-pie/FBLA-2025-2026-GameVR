@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.InputSystem;
 using KinematicCharacterController.Examples;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 public class moneyCounter : MonoBehaviour
 {
@@ -10,15 +11,21 @@ public class moneyCounter : MonoBehaviour
     public static bool machineOpen = false;
     public PlayerInput playerInput;
     [SerializeField] GameObject ClockOutUI;
+    public GameObject StarsUI;
     public static moneyCounter instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is createdpublic static ScoreCounter instance;
     public TMP_Text scoreText;
     public TMP_Text moneyText;
+    public TMP_Text starText;
     public int currentMoney;
     public int moneyPayout;
     public int moneyPayoutAmount;
     public int moneyFromTyping;
-    
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+    public GameObject star4;
+    public int stars;
     void Awake()
     {
         instance = this;
@@ -95,6 +102,30 @@ public class moneyCounter : MonoBehaviour
         moneyText.text = "$" + moneyPayoutAmount.ToString();
         PlayerPrefs.SetInt("timesTyped", 0);
     }
+    public void CalcStars()
+    {
+        stars = Random.Range(1, 4);
+        if (stars == 1)
+        {
+            star1.SetActive(true);
+            starText.text = "bad";
+        }
+        if (stars == 2)
+        {
+            star2.SetActive(true);
+            starText.text = "meh";
+        }
+        if (stars == 3)
+        {
+            star3.SetActive(true);
+            starText.text = "okay";
+        }
+        if (stars == 4)
+        {
+            star4.SetActive(true);
+            starText.text = "Good";
+        }
+    }
     public void CalcPayoutNoPause()
     {
         moneyPayoutAmount = moneyPayout;
@@ -112,6 +143,18 @@ public class moneyCounter : MonoBehaviour
     }
     public void ClockOut()
     {
+        
+        IncreaseMoney(1);
+        ClockOutUI.SetActive(false);
+        StarsUI.SetActive(true);
+        star1.SetActive(false);
+        star2.SetActive(false);
+        star3.SetActive(false);
+        star4.SetActive(false);
+        CalcStars();
+    }
+    public void returnToBedroom()
+    {
         examplePlayer.enabled = true;
         machineOpen = false;
         ClockOutUI.SetActive(false);
@@ -119,7 +162,6 @@ public class moneyCounter : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1f;
-        IncreaseMoney(1);
         SceneManager.LoadScene("Bedroom");
     }
     public void AccuseSuspect1()

@@ -11,13 +11,14 @@ public class pauseLogic : MonoBehaviour
     public GameObject mainMenu;
     public GameObject spanishMainMenu;
     public GameObject HowToPlayMenuasset;
+    public GameObject HowToPlaySpanish;
     public PlayerInput playerInput;
-    public bool englishOrSpanish;
+    public bool englishOrSpanish = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        englishOrSpanish = false;
     }
 
     // Update is called once per frame
@@ -49,6 +50,7 @@ public class pauseLogic : MonoBehaviour
     public void Options()
     {
         optionsMenu.SetActive(true);
+        spanishMainMenu.SetActive(false);
         mainMenu.SetActive(false);
         pauseMenu.SetActive(false);
     }
@@ -70,13 +72,37 @@ public class pauseLogic : MonoBehaviour
     }
     public void HowToPlayMenu()
     {
+        if (englishOrSpanish != false)
+        {
         mainMenu.SetActive(false);
+        spanishMainMenu.SetActive(false);
+        HowToPlayMenuasset.SetActive(false);
+        HowToPlaySpanish.SetActive(true);
+        }
+        else
+        {
+        mainMenu.SetActive(false);
+        spanishMainMenu.SetActive(false);
+        HowToPlaySpanish.SetActive(false);
         HowToPlayMenuasset.SetActive(true);
+        }
+        
     }
     public void CloseHowToPlayMenu()
     {
-        mainMenu.SetActive(true);
-        HowToPlayMenuasset.SetActive(false);
+        if (englishOrSpanish != false)
+        {
+            spanishMainMenu.SetActive(true);
+            HowToPlayMenuasset.SetActive(false);
+            HowToPlaySpanish.SetActive(false);
+        }
+        else
+        {
+            mainMenu.SetActive(true);
+            HowToPlayMenuasset.SetActive(false);
+            HowToPlaySpanish.SetActive(false);
+        }
+        
     }
     public void startPlayerSelection()
     {
