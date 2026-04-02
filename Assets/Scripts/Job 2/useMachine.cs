@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using KinematicCharacterController.Examples;
 using UnityEngine.SceneManagement;
+using Cursor = UnityEngine.Cursor;
 
 
 

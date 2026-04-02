@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class customerScript : MonoBehaviour
 {
@@ -6,6 +7,9 @@ public class customerScript : MonoBehaviour
     [Header("Tag Names")]
     public string customerTag = "Customer";
     public string itemTag = "Item";
+    public GameObject Customer1;
+    public GameObject Customer2;
+    public TMP_Text orderText;
     
 
 
@@ -38,8 +42,16 @@ public class customerScript : MonoBehaviour
 
         
     }
+    public void SpawnNewCustomer()
+    {
+        Customer2.SetActive(true);
+        orderText.text = "One Mocha Please";
+    }
  void DeleteHeldObject()
     {
+        Customer1.SetActive(false);
+        orderText.text = "";
+        Invoke("SpawnNewCustomer", 3);
         if (interaction == null) return;
         if (interaction.heldObject == null)
         {

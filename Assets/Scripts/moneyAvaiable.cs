@@ -15,6 +15,10 @@ public class moneyAvaiable : MonoBehaviour
     public GameObject money8;
     public GameObject money9;
     public GameObject money10;
+    public GameObject job1;
+    public GameObject job2;
+    public GameObject job3;
+    public GameObject poor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -75,5 +79,58 @@ public class moneyAvaiable : MonoBehaviour
         {
             money10.SetActive(true);
         }
+    }
+    public void BuyJob1()
+    {
+        if (currentMoney >= 50)
+        {
+            currentMoney -= 50;
+            job1.SetActive(false);
+            PlayerPrefs.SetInt("Money", currentMoney);
+        }
+        else
+        {
+            poor.SetActive(true);
+            Invoke("YouAreTooPoor", 3);
+        }
+        
+        
+    }
+    public void BuyJob2()
+    {
+        if (currentMoney >= 50)
+        {
+            currentMoney -= 50;
+            job2.SetActive(false);
+            PlayerPrefs.SetInt("Money", currentMoney);
+        }
+        else
+        {
+            poor.SetActive(true);
+            Invoke("YouAreTooPoor", 3);
+            PlayerPrefs.SetInt("Money", currentMoney);
+        }
+        
+        
+    }
+    public void BuyJob3()
+    {
+        if (currentMoney >= 50)
+        {
+            currentMoney -= 50;
+            job3.SetActive(false);
+            PlayerPrefs.SetInt("Money", currentMoney);
+            
+        }
+        else
+        {
+            poor.SetActive(true);
+            Invoke("YouAreTooPoor", 1.0f);
+        }
+        
+    }
+    public void YouAreTooPoor()
+    {
+        poor.SetActive(false);
     }
 }

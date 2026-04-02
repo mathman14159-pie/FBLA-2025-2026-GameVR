@@ -116,5 +116,9 @@ public class pauseLogic : MonoBehaviour
     {
         englishOrSpanish = isOn;
     }
+    public void DevSettings()
+    {
+        PlayerPrefs.SetInt("Money", 0);
+    }
     
 }
