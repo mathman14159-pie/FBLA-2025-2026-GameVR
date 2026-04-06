@@ -14,6 +14,7 @@ public class pauseLogic : MonoBehaviour
     public GameObject HowToPlaySpanish;
     public PlayerInput playerInput;
     public bool englishOrSpanish = false;
+    public GameObject notUnlockedUI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +33,14 @@ public class pauseLogic : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            notUnlockedUI.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            notUnlockedUI.SetActive(false);
         }
     }
     public void Resume()
