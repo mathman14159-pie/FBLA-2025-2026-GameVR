@@ -19,6 +19,7 @@ public class PlayerInteraction : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction grabAction;
     public bool coffee;
+    public GameObject game67;
 
     void Awake()
     {
@@ -72,6 +73,13 @@ public class PlayerInteraction : MonoBehaviour
                     
                 }
             }
+            if (hit.collider.CompareTag("67"))
+            Debug.Log("67");
+                if (Input.GetKeyDown(KeyCode.P))
+                {
+                    Debug.Log("P pressed");
+                    game67.SetActive(true);
+                }
         }
         else if (heldObject == null) {
             // Clear hover if not looking at anything
