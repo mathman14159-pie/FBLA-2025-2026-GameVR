@@ -3794,6 +3794,7 @@ MonoBehaviour:
   holdPoint: {fileID: 2140774157}
   heldObject: {fileID: 0}
   coffee: 0
+  game67: {fileID: 0}
 --- !u!114 &1111819374
 MonoBehaviour:
   m_ObjectHideFlags: 0
