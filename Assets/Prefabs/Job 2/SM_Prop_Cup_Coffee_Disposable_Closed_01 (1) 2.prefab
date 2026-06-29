@@ -184,5 +184,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 0
-  promptText: Press E to Pick Up
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Coffee
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: ea3188f91feff5841b05ca7c0b3ef85f, type: 3}

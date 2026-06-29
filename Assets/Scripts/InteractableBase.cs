@@ -15,7 +15,7 @@ public class InteractableBase : MonoBehaviour
     {
         if (spawnedUI == null && hoverUIPrefab != null)
         {
-            spawnedUI = Instantiate(hoverUIPrefab, transform.position + Vector3.up * 1.2f, Quaternion.identity);
+            spawnedUI = Instantiate(hoverUIPrefab, transform.position + Vector3.up * 1.1f, Quaternion.identity);
             spawnedUI.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = promptText;
         }
     }
