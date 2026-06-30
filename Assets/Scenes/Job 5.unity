@@ -4611,8 +4611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 1
-  promptText: Press U to Clock Out
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Clock Out
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: 79e687996a6df2348ba0cb5f5c8310fd, type: 3}
 --- !u!1001 &1342432674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8193,8 +8193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 1
-  promptText: Press U To Start Working
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Code
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: 79e687996a6df2348ba0cb5f5c8310fd, type: 3}
 --- !u!65 &2057395360
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -84,8 +84,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 1
-  promptText: Press G To Clean
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Clean
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: 4546b9594027ad2428d1b615fcf40a8f, type: 3}
 --- !u!1001 &6743271702752602182
 PrefabInstance:
   m_ObjectHideFlags: 0

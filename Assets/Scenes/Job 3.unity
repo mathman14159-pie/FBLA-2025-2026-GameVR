@@ -129685,8 +129685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 1
-  promptText: Press U to Clock Out
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Clock Out
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: 79e687996a6df2348ba0cb5f5c8310fd, type: 3}
 --- !u!1001 &928345047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191808,8 +191808,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 0
-  promptText: Press E To Pick Up
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Flashlight
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: ea3188f91feff5841b05ca7c0b3ef85f, type: 3}
 --- !u!1001 &1414064036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -206819,8 +206819,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableBase
   interactionType: 1
-  promptText: Press E To Look At Suspects
-  hoverUIPrefab: {fileID: 1915909279863448138, guid: 09f28d1479992194da45618d82c20147, type: 3}
+  promptText: Inspect Suspects
+  hoverUIPrefab: {fileID: 1915909279863448138, guid: ea3188f91feff5841b05ca7c0b3ef85f, type: 3}
 --- !u!1001 &1510242807
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -264964,6 +264964,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5240288931754097109, guid: b51ad20ddc7d6294d9469ef8af4530da, type: 3}
+      propertyPath: promptText
+      value: Clean
+      objectReference: {fileID: 0}
+    - target: {fileID: -5240288931754097109, guid: b51ad20ddc7d6294d9469ef8af4530da, type: 3}
+      propertyPath: hoverUIPrefab
+      value: 
+      objectReference: {fileID: 1915909279863448138, guid: 4546b9594027ad2428d1b615fcf40a8f, type: 3}
     - target: {fileID: 3589302711721921877, guid: b51ad20ddc7d6294d9469ef8af4530da, type: 3}
       propertyPath: m_Name
       value: Spill Pot

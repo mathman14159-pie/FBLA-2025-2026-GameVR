@@ -82,9 +82,9 @@ public class moneyAvaiable : MonoBehaviour
     }
     public void BuyJob1()
     {
-        if (currentMoney >= 50)
+        if (currentMoney >= 30)
         {
-            currentMoney -= 50;
+            currentMoney -= 30;
             job1.SetActive(false);
             PlayerPrefs.SetInt("Money", currentMoney);
         }
@@ -115,9 +115,9 @@ public class moneyAvaiable : MonoBehaviour
     }
     public void BuyJob3()
     {
-        if (currentMoney >= 50)
+        if (currentMoney >= 90)
         {
-            currentMoney -= 50;
+            currentMoney -= 90;
             job3.SetActive(false);
             PlayerPrefs.SetInt("Money", currentMoney);
             
