@@ -9,6 +9,7 @@ public class pauseLogic : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject optionsMenu;
     public GameObject mainMenu;
+    public GameObject creditsMenu;
     public GameObject spanishMainMenu;
     public GameObject HowToPlayMenuasset;
     public GameObject HowToPlaySpanish;
@@ -75,9 +76,32 @@ public class pauseLogic : MonoBehaviour
         {
             optionsMenu.SetActive(false);
             mainMenu.SetActive(true);
-            pauseMenu.SetActive(true);
+            HowToPlayMenuasset.SetActive(false);
+            HowToPlaySpanish.SetActive(false);
         }
         
+    }
+    public void Credits()
+    {
+        creditsMenu.SetActive(true);
+        spanishMainMenu.SetActive(false);
+        mainMenu.SetActive(false);
+        pauseMenu.SetActive(false);
+    }
+    public void CloseCredits()
+    {
+        if (englishOrSpanish != false)
+        {
+            spanishMainMenu.SetActive(true);
+            creditsMenu.SetActive(false);
+            Debug.Log("Close");
+        }
+        else
+        {
+            mainMenu.SetActive(true);
+            creditsMenu.SetActive(false);
+            Debug.Log("Close");
+        }
     }
     public void HowToPlayMenu()
     {
